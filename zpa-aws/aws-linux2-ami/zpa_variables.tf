@@ -1,21 +1,3 @@
-// Create Zscaler Provisioning Key
-variable "zpa_provisioning_key_name" {
-  default = "AWS Provisioning Key"
-  type    = string
-}
-
-variable "zpa_provisioning_key_association_type" {
-  default = "CONNECTOR_GRP"
-  type    = string
-}
-
-variable "zpa_provisioning_key_max_usage" {
-  default = "10"
-  type    = string
-}
-
-
-
 // Create Zscaler App Connector Group
 variable "zpa_app_connector_group_name" {
   default = "Canada Connector Group"
@@ -81,3 +63,20 @@ variable "zpa_app_connector_group_dns_query_type" {
   default = "IPV4"
   type    = string
 }
+
+// Create Zscaler Provisioning Key
+variable "zpa_provisioning_key_name" {
+  default = "AWS-PK"
+  type    = string
+}
+
+variable "zpa_provisioning_key_association_type" {
+  default = "CONNECTOR_GRP"
+  type    = string
+}
+
+variable "zpa_provisioning_key_max_usage" {
+  default = "10"
+  type    = string
+}
+
