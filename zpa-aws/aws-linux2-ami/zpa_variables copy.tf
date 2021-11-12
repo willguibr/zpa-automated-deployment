@@ -25,12 +25,12 @@ variable "zpa_app_connector_group_country_code" {
 }
 
 variable "zpa_app_connector_group_latitude" {
-  default = "37.3382082"
+  default = "49.1041779"
   type    = string
 }
 
 variable "zpa_app_connector_group_longitude" {
-  default = "-121.8863286"
+  default = "-122.6603519"
   type    = string
 }
 

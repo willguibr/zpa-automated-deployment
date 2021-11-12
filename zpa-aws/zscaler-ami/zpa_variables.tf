@@ -1,19 +1,3 @@
-// Create Zscaler Provisioning Key
-variable "zpa_provisioning_key_name" {
-  default = "AWS Provisioning Key"
-  type    = string
-}
-
-variable "zpa_provisioning_key_association_type" {
-  default = "CONNECTOR_GRP"
-  type    = string
-}
-
-variable "zpa_provisioning_key_max_usage" {
-  default = "10"
-  type    = string
-}
-
 // Create Zscaler App Connector Group
 variable "zpa_app_connector_group_name" {
   default = "Canada Connector Group"
@@ -31,27 +15,27 @@ variable "zpa_app_connector_group_enabled" {
 }
 
 variable "zpa_app_connector_group_city_country" {
-  default = "Langley, CA"
+  default = "San Jose, CA"
   type    = string
 }
 
 variable "zpa_app_connector_group_country_code" {
-  default = "CA"
+  default = "US"
   type    = string
 }
 
 variable "zpa_app_connector_group_latitude" {
-  default = "49.1041779"
+  default = "37.3382082"
   type    = string
 }
 
 variable "zpa_app_connector_group_longitude" {
-  default = "-122.6603519"
+  default = "-121.8863286"
   type    = string
 }
 
 variable "zpa_app_connector_group_location" {
-  default = "Langley City, BC, Canada"
+  default = "San Jose, CA, United States"
   type    = string
 }
 
@@ -76,6 +60,23 @@ variable "zpa_app_connector_group_version_profile_id" {
 }
 
 variable "zpa_app_connector_group_dns_query_type" {
-  default = "IPV4"
+  default = "IPV4_IPV6"
   type    = string
 }
+
+// Create Zscaler Provisioning Key
+variable "zpa_provisioning_key_name" {
+  default = ""
+  type    = string
+}
+
+variable "zpa_provisioning_key_association_type" {
+  default = "CONNECTOR_GRP"
+  type    = string
+}
+
+variable "zpa_provisioning_key_max_usage" {
+  default = "10"
+  type    = string
+}
+

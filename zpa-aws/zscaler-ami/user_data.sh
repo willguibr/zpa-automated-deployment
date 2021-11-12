@@ -8,8 +8,7 @@ URL="http://169.254.169.254/latest/meta-data/network/interfaces/macs/"
 MAC=$(curl $URL)
 URL=$URL$MAC"vpc-id/"
 VPC=$(curl $URL)
-key="ZSDEMO"
-instanceid=$(curl http://169.254.169.254/latest/meta-data/meta-data/instance-id)
+key="ZSDEMO-"$REGION"-"$VPC
 
 #Stop the App Connector service which was auto-started at boot time
 sudo systemctl stop zpa-connector
